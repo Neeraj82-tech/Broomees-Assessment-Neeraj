@@ -16,7 +16,7 @@ app.use(cors({ origin: '*' }));
 app.use(bodyParser.json());
 app.use('/api', userRoutes);
 
-app.post("/signin", async (req, res) => {
+app.post("/api/signin", async (req, res) => {
     const { email, password } = req.body;
   
     try {
