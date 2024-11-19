@@ -1,0 +1,102 @@
+.right-section {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    background-color: white;
+  }
+
+  
+
+  .form-row{
+    display: flex;
+    gap: 3px;
+  }
+  
+  .form-header h2 {
+    color: #4b4bfc;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .form-header p {
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .sign-in{
+    background-color: white;
+    color: #4b4bfc;
+    border: solid 1px;
+    width: fit-content;
+    align-self: flex-end; 
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+  
+  input, button {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #4b4bfc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3a3adb;
+  }
+  
+  @media (max-width: 768px) {
+    .right-section {
+      padding: 20px;
+    }
+
+    .form-row{
+        display: flex;
+        flex-direction: column;
+        
+      }
+  
+    form {
+      gap: 10px;
+      margin-right: 25px;
+    }
+  
+    input, button {
+      padding: 12px;
+      font-size: 0.9rem;
+    }
+  
+    .form-header h2 {
+      font-size: 1.5rem;
+    }
+  
+    .form-header p {
+      font-size: 0.9rem;
+    }
+    .sign-in {
+        margin-top: 15px;
+        align-self: center;
+        width: 100%; 
+        position: static;
+      }
+  }
+  
